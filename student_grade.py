@@ -10,9 +10,9 @@ def get_marks(subject_num):
             if 0 <= mark <= 100:
                 return mark
             else:
-                print("  ⚠  Marks must be between 0 and 100. Try again.")
+                print("   Marks must be between 0 and 100. Try again.")
         except ValueError:
-            print("  ⚠  Invalid input. Please enter a numeric value.")
+            print("   Invalid input. Please enter a numeric value.")
  
  
 def calculate_grade(percentage):
@@ -64,11 +64,11 @@ def main():
  
     # --- Remarks ---
     remarks = {
-        "A": "🏆 Excellent! Outstanding performance!",
-        "B": "👍 Good job! Keep it up!",
-        "C": "📘 Average. There's room to improve.",
-        "D": "⚠  Below average. Work harder.",
-        "F": "❌ Failed. Please seek extra support.",
+        "A": " Excellent! Outstanding performance!",
+        "B": " Good job! Keep it up!",
+        "C": " Average. There's room to improve.",
+        "D": "  Below average. Work harder.",
+       "F": " Failed. Please seek extra support.",
     }
     print(f"  Remark       : {remarks[grade]}")
     print("=" * 45)
